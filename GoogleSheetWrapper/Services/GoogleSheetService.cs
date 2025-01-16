@@ -60,7 +60,7 @@ public static partial class GoogleSheetService
 
         if (string.IsNullOrWhiteSpace(_credentialFile))
             errorMessage.Add("Credential File has not been set.");
-        else if (new FileInfo(_credentialFile).Extension != "json")
+        else if (_credentialFile.Split('.').LastOrDefault() != "json")
             errorMessage.Add("Credential File is not a JSON file.");
 
         if (string.IsNullOrWhiteSpace(_applicationName))
