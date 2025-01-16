@@ -33,7 +33,7 @@ public static partial class GoogleSheetService
     /// Uses the credentials set in the credential files registered with <see cref="RegisterCredentialJsonFile(string)"/>
     /// </summary>
     /// <returns>An instance of the <see cref="SheetsService"/> using the application name set in <see cref="RegisterSheet(string, string)"/> </returns>
-    public static SheetsService AuthorizeGoogleApp()
+    private static SheetsService AuthorizeGoogleApp()
     {
         Validate();
         
