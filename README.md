@@ -8,4 +8,4 @@ To use it:\
 3- Then to enable the usage of the Google services, use the static class of GoogleSheetService and use the following methods to properly:\
    3.1- GoogleSheetService.RegisterCredentialJsonFile("The full path and name of the embedded resource, not the path in your folder");\
    3.2- GoogleSheetService.RegisterSheet("The name of the application set within google settings", "The sheet ID you're going to use, that huge string part of the URL after the /d/");\
-4- Call GoogleSheetService.Sheet to use the wrapper, the first time around it will do the authentication and let you use the methods available.\
+4- Call GoogleSheetService.Sheet to use the wrapper, the first time around it will do the authentication and let you use the methods available.
